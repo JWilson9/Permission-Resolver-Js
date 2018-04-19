@@ -46,7 +46,7 @@ describe('PermissionDependencyResolver', function() {
     expect(pdr.canDeny(['view', 'edit', 'delete'], 'edit')).toBeFalsy()
   })
 
-  /*it('validates whether permissions can be granted given complex dependencies', function(){
+  it('validates whether permissions can be granted given complex dependencies', function(){
     pdr = new PermissionDependencyResolver(complexPermissionDependencies)
 
     expect(pdr.canGrant(['view', 'edit', 'delete'], 'batch_update')).toBeFalsy()
@@ -54,7 +54,7 @@ describe('PermissionDependencyResolver', function() {
     expect(pdr.canGrant(['view', 'edit', 'delete'], 'audit')).toBeFalsy()
     expect(pdr.canGrant(['view', 'edit', 'delete', 'create'], 'audit')).toBeTruthy()
   })
-
+/*
   it('throws an exception when validating permissions if existing permissions are invalid', function(){
     pdr = new PermissionDependencyResolver(complexPermissionDependencies)
 
