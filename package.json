@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "expect": "^22.4.3",
+    "node-serialize": "0.0.4",
     "tsort": "0.0.1"
   }
 }
