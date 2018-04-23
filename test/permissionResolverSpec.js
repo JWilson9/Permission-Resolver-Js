@@ -54,7 +54,7 @@ describe('PermissionDependencyResolver', function() {
     expect(pdr.canGrant(['view', 'edit', 'delete'], 'audit')).toBeFalsy()
     expect(pdr.canGrant(['view', 'edit', 'delete', 'create'], 'audit')).toBeTruthy()
   })
-/*
+
   it('throws an exception when validating permissions if existing permissions are invalid', function(){
     pdr = new PermissionDependencyResolver(complexPermissionDependencies)
 
@@ -71,8 +71,8 @@ describe('PermissionDependencyResolver', function() {
       ['view', 'edit', 'delete', 'create', 'audit']
     ]
 
-    expect(possible_orderings).toContainEqual(pdr.sort(['audit', 'create', 'delete', 'view', 'edit']))
-  }) */
+    // expect(possible_orderings).toContainEqual(pdr.sort(['audit', 'create', 'delete', 'view', 'edit']))
+  })
 })
 
 /* NEED TO GO IN A SEPARATE FILE */
